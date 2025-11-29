@@ -1,0 +1,10 @@
+import pyttsx3
+speaker = pyttsx3.init()
+while True:
+    text = input("Enter Your Text You Want Me To Pronounce : ")
+    speaker.say(text)
+    speaker.runAndWait()
+    again = input("\nDo you want to run again? (y/n): ")
+    if again.lower() != "y":
+        print("\nProgram ended. Goodbye!")
+        break
